@@ -940,3 +940,16 @@ export const pySegSort = (arr) => {
 			location.href = '/' + lang;
 	}
 }
+
+// 对象数组去重
+function arrayToheavy() {
+  const result = [];
+  const mapList = new Map();
+  arr.forEach(item => {
+  if(!mapList.has(item.id)) {
+	result.push(item)
+	mapList.set(item.id, true)
+  }
+})
+				return result
+			}
